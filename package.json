@@ -1,0 +1,12 @@
+{
+  "name": "pantheon_app",
+  "version": "1.0.0",
+  "description": "This is the solution to Pantheon's full-stack developer assignment",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Pearl Phutanate",
+  "license": "ISC",
+  "type": "module"
+}
