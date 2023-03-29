@@ -1,0 +1,25 @@
+button{
+    display: block !important;
+}
+
+#display{
+    width: fit-content;
+}
+
+.contactName{
+    color:rgb(27, 72, 232);
+}
+
+.contact{
+    letter-spacing: 1.1px;
+}
+
+.date{
+    color: rgb(34, 104, 226);
+    font-weight: 500;
+}
+
+.none{
+    color: rgb(183, 2, 2);
+    font-size: 17px;
+}

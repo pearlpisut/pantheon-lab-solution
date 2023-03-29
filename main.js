@@ -1,5 +1,7 @@
 import { Passing_score, Contact, Test_info } from "./info.js";
 
+const display = document.getElementById("display")
+
 const Total_days = Test_info.length
 const Total_students = Contact.length
 
@@ -27,7 +29,7 @@ allTest_info = allTest_info.filter(item => item.score < Passing_score)
 
 //sorting of input
 allTest_info.sort(function(a, b){
-        //sort by date assendingly
+        //sort by date (earliest first)
         if(a.day > b.day) return 1
         else return -1
     })
@@ -88,17 +90,30 @@ for(let i=0; i<Total_days; i++){
 
 console.log("\n ----   Call to be made   ---- \n")
 
-//outputting the program's final result
-for(let i of final_ans){
-    var key = Object.keys(i)[0]
-    console.log("Date to call: ", key)
-    console.log("callee list: ")
-    if(i[key] == 'none'){
-        console.log("none\n")
-        continue
+//the result will be shown when clicking the button
+document.getElementById("trigger").addEventListener("click", show)
+
+function show(){
+    //outputting the program's final result
+    for(let i of final_ans){
+        var key = Object.keys(i)[0]
+        // console.log("Date to call: ", key)
+        display.innerHTML += `<span class=""> Date to call: </span><br><span class="fs-4 date">${key}</span> <br>`
+        // console.log("callee list: ")
+        display.innerHTML += "Callee list: "
+        if(i[key] == 'none'){
+            // console.log("none\n")
+            display.innerHTML += "<span class='fw-bold none'>none</span> <br><br>"
+            continue
+        }
+        for(let j of i[key]){
+            display.innerHTML += `<br> <span class="contact fs-5"> 
+            <span class="contactName fw-bold">${j.name}</span> / ${j.phone} / ${j.day} /  ${j.score} </span>`
+            // console.log(`${j.name} | ${j.phone} | ${j.day} |  ${j.score}`)
+        }
+        // console.log("\n")
+        display.innerHTML += "<br><br>"
     }
-    for(let j of i[key]){
-        console.log(`${j.name} | ${j.phone} | ${j.day} |  ${j.score}`)
-    }
-    console.log("\n")
+    document.getElementById("trigger").disabled = true
 }
+
