@@ -10,7 +10,7 @@ Run the following commands in your terminal:
 ```bash
 git clone https://github.com/pearlpisut/pantheon-lab-solution.git
 
-npm init
+cd pantheon-lab-solution
 ```
 The program is implemented `main.js`, while the input data is received from `info.js`, where user can make adjustments. Outputs can be viewed in `index.html` via web
 browser.
