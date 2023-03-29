@@ -12,5 +12,5 @@ git clone https://github.com/pearlpisut/pantheon-lab-solution.git
 
 cd pantheon-lab-solution
 ```
-The program is implemented `main.js`, while the input data is received from `info.js`, where user can make adjustments. Outputs can be viewed in `index.html` via web
+The program is implemented in `main.js`, while the input data is received from `info.js`, where users can customize. Outputs can be viewed in `index.html` via web
 browser.
