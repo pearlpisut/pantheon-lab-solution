@@ -3,7 +3,9 @@ This is a solution to Pantheon Lab full-stack development assignment created wit
 
 ## Motivation and messages
 JavaScript is used to implement the algorithms because of its extensive built-in methods, e.g., `sort()` and `map()`, as well as its ability to work with web browser. 
-Logics and explanations of the program are included thorughout the program file. `algorithm_analysis.pdf` contains analysis of the time complexity and space complexity. 
+Logics and explanations of the program are included thorughout the program file. `algorithm_analysis.pdf` contains analysis of the time complexity and space complexity.
+
+While this is the only implementation thus far due to the time limit, I would like to further try different methods using new abstract data types in other languagues like C++ soon.
 
 ## How to run
 Run the following commands in your terminal:
