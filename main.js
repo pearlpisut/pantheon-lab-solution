@@ -97,19 +97,19 @@ function show(){
     //outputting the program's final result
     for(let i of final_ans){
         var key = Object.keys(i)[0]
-        // console.log("Date to call: ", key)
+        console.log("Date to call: ", key)
         display.innerHTML += `<span class=""> Date to call: </span><br><span class="fs-4 date">${key}</span> <br>`
-        // console.log("callee list: ")
+        console.log("callee list: ")
         display.innerHTML += "Callee list: "
         if(i[key] == 'none'){
-            // console.log("none\n")
+            console.log("none\n")
             display.innerHTML += "<span class='fw-bold none'>none</span> <br><br>"
             continue
         }
         for(let j of i[key]){
             display.innerHTML += `<br> <span class="contact fs-5"> 
             <span class="contactName fw-bold">${j.name}</span> / ${j.phone} / ${j.day} /  ${j.score} </span>`
-            // console.log(`${j.name} | ${j.phone} | ${j.day} |  ${j.score}`)
+            console.log(`${j.name} / ${j.phone} / ${j.day} /  ${j.score}`)
         }
         // console.log("\n")
         display.innerHTML += "<br><br>"
